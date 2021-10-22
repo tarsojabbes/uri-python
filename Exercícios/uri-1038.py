@@ -1,5 +1,4 @@
-input = input().split()
-code, amount = input
+code, amount = input().split()
 
 hotdog = 4
 xSalada = 4.5

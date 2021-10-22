@@ -1,6 +1,4 @@
-numbers = input().split()
-
-a, b, c = numbers
+a, b, c = input().split()
 
 delta = (float(b)**2) - 4 * float(a) * float(c)
 r1 = 0
