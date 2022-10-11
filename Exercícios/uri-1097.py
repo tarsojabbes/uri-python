@@ -1,10 +1,9 @@
-cont = 1
-repeated_cont = 7
+i = 1
+j = 7
 
-for i in range(1, 16):
-    print(f"I={cont} J={repeated_cont}")
-    
-    repeated_cont -= 1
-    if i % 3 == 0:
-        cont += 2
-        repeated_cont += 5
+while(i <= 9):
+  for r in range(3):
+    print("I={} J={}".format(i, j - r))
+
+  i += 2
+  j += 2
