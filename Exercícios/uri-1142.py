@@ -1,11 +1,5 @@
-sequence = ""
-
 n = int(input())
-
-for i in range(n * 4 + 1):
-    if i % 4 != 0:
-        sequence += f"{i}" + " "
-    elif i % 4 == 0 and i != 0:
-        sequence += "PUM\n"
-
-print(sequence.strip())
+x = 1
+for i in range(1, n + 1):
+    print(f"{x} {x+1} {x+2} PUM")
+    x = x + 4
