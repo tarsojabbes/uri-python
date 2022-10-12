@@ -1,11 +1,13 @@
-soma = 0
+
+total = 0
 cont = 0
+
 while True:
-  atual = int(input())
-  if atual > 0:
-    soma += atual
+    age = int(input())
+
+    if(age <= 0): break
+
+    total += age
     cont += 1
-  else:
-    break
-media = soma / cont
-print("%.2f" %media)
+
+print(f'{total / cont:.2f}')
