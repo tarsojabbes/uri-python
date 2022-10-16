@@ -1,14 +1,14 @@
-alcool = gasolina = diesel = 0
-while True:
-    combustivel = int(input())
-    if combustivel == 1:
-        alcool += 1
-    elif combustivel == 2:
-        gasolina += 1
-    elif combustivel == 3:
-        diesel += 1
-    elif combustivel == 4:
-        break
-        
+x = ''
+tabela = {'1': 0,
+          '2': 0,
+          '3': 0
+          }
+
+while x != '4':
+    x = input()
+    if x in tabela:
+        tabela[x] = tabela[x]+1
 print("MUITO OBRIGADO")
-print("Alcool: %i\nGasolina: %i\nDiesel: %i" % (alcool, gasolina, diesel))
+print("Alcool:", tabela['1'])
+print("Gasolina:", tabela['2'])
+print("Diesel:", tabela['3'])
