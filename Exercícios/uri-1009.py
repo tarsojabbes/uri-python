@@ -17,3 +17,5 @@ print("TOTAL = R$ {:.2f}".format(salario))
 # salarioTotal = salarioFixo + (numVendas * 0.15)
 
 # print("TOTAL = R$ %0.2f" % salarioTotal)
+
+# Eh apenas uma maneira de imprimir sem usar o format.
