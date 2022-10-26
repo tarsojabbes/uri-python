@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from math import sqrt
 
 def fib(n):
@@ -5,4 +7,4 @@ def fib(n):
     return (((1 + raiz_5) / 2) ** n - ((1 - raiz_5) / 2) ** n) / sqrt(5)
 
 n = int(input())
-print(f"{fib(n):.1f}")
+print("%.1f" % fib(n))
