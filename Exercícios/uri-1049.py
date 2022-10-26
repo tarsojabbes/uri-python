@@ -1,26 +1,25 @@
-inp1 = input()
-inp2 = input()
-inp3 = input()
+# -*- coding: utf-8 -*-
 
-if inp1 == 'vertebrado':
-    if inp2 == 'ave':
-        if inp3 == 'carnivoro':
-            print('aguia')
-        elif inp3 == 'onivoro':
-            print('pomba')
-    elif inp2 == 'mamifero':
-        if inp3 == 'onivoro':
-            print('homem')
-        elif inp3 == 'herbivoro':
-            print('vaca')
-elif inp1 == 'invertebrado':
-    if inp2 == 'anelideo':
-        if inp3 == 'hematofago':
-            print('sanguessuga')
-        elif inp3 == 'onivoro':
-            print('minhoca')
-    elif inp2 == 'inseto':
-        if inp3 == 'hematofago':
-            print('pulga')
-        elif inp3 == 'herbivoro':
-            print('lagarta')
+animal1 = input()
+animal2 = input()
+animal3 = input()
+
+if animal1 == 'vertebrado':
+    if animal2 == 'ave' and animal3 == 'carnivoro':
+        print('aguia')
+    elif animal2 == 'ave' and animal3 == 'onivoro':
+        print('pomba')
+    elif animal2 == 'mamifero' and animal3 == 'onivoro':
+        print('homem')
+    elif animal2 == 'mamifero' and animal3 == 'herbivoro':
+        print('vaca')
+        
+elif animal1 == 'invertebrado':
+    if animal2 == 'inseto' and animal3 == 'hematofago':
+        print('pulga')
+    elif animal2 == 'inseto' and animal3 == 'herbivoro':
+        print('lagarta')
+    elif animal2 == 'anelideo' and animal3 == 'hematofago':
+        print('sanguessuga')
+    elif animal2 == 'anelideo' and animal3 == 'onivoro':
+        print('minhoca')

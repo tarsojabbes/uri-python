@@ -1,13 +1,18 @@
-numeros = input().split()
+a, b, c = map(float, input().split())
+pi = 3.14159
+#área do triangulo retangulo de base 'a' e altura 'c'
+a_triangulo = (a * c)/2
+#área do cículo de raio 'c'
+a_circulo = pi * c ** 2
+#área do trapézio de base 'a' e 'b' e altura 'c'
+a_trapezio = (a + b)/2 * c
+#área do quadrado de lado 'b'
+a_quadrado = b ** 2
+#área do retangulo de lado 'a' e 'b'
+a_retangulo = a * b
 
-triangulo = (float(numeros[0]) * float(numeros[2]))/2
-
-circulo = 3.14159 * (float(numeros[2])**2)
-
-trapezio = ((float(numeros[0]) + float(numeros[1])) * float(numeros[2]))/2
-
-quadrado = float(numeros[1])**2
-
-retangulo = float(numeros[0]) * float(numeros[1])
-
-print(f'TRIANGULO: {triangulo:.3f}\nCIRCULO: {circulo:.3f}\nTRAPEZIO: {trapezio:.3f}\nQUADRADO: {quadrado:.3f}\nRETANGULO: {retangulo:.3f}')
+print(f"TRIANGULO: {a_triangulo:.3f}")
+print(f"CIRCULO: {a_circulo:.3f}")
+print(f"TRAPEZIO: {a_trapezio:.3f}")
+print(f"QUADRADO: {a_quadrado:.3f}")
+print(f"RETANGULO: {a_retangulo:.3f}")
