@@ -1,14 +1,16 @@
 n = int(input())
 
-count = 0
-a1 = 0
-a2 = 1
-sequence = "0 1 "
-while count < n - 2:
-    a3 = a1 + a2
-    sequence += str(a3) + " "
-    a1 = a2
-    a2 = a3
-    count += 1
+valor1 = [0]*n
 
-print(sequence.strip())
+for i in range(0, n):
+    if i <= 1:
+        valor1[i] = i
+    else:
+        valor1[i] = valor1[i -1] + valor1[i - 2]
+
+    if i == n -1:
+        print('%d'%(valor1[i]), end = ' ')
+    else:
+        print('%d'%(valor1[i]), end = ' ')
+
+print()   # Contribuicao de Maria Clara Rodrigues em 10/10/2022

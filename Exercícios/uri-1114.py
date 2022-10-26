@@ -1,7 +1,7 @@
 while True:
-    senha = input()
-    if senha == "2002":
-        print("Acesso Permitido")
+    i = int(input())
+    if i == 2002:
+        print('Acesso Permitido')
         break
     else:
-        print("Senha Invalida")
+        print('Senha Invalida')
