@@ -1,10 +1,10 @@
-Y = 1
-x = int(input())
-print("N[0] = 0")
-for W in range(1, 1000):
-  if x > Y:
-    print("N[" + str(W) + "] = " + str(Y))
-    Y += 1
-  else:
-    Y = 1
-    print("N[" + str(W) + "] = 0")
+T=int(input())
+N=[]
+cont=0
+if 2<= T <= 50:
+    while cont <= 1000:
+        for i in range(T):
+            N.append(i)
+            cont+=1
+for a in range(1000):
+    print("N[%d] = %d" %(a,N[a]))
